@@ -36,7 +36,11 @@
 		<h2 id="textoutput" class="center">Show results here</h2>
 	</div>
 	<script type="text/javascript">
-
+  document.getElementById("entrybutton").addEventListener("click", function() {
+  			var x = document.getElementById("entryinput").value;
+  			document.getElementById("textoutput").innerHTML = x;
+  			alert("Julie Gelman: "+x);
+  		})
 	</script>
 </body>
 </html>
